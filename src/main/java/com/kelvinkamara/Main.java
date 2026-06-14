@@ -8,14 +8,14 @@ public class Main {
         // BigDecimal is the industry standard for financial math
         // because it avoids floating-point precision errors.
 
-        // 2.5 is exactly halfway. Nearest even number is 2.
-        BigDecimal val1 = new BigDecimal("2.5");
-        BigDecimal rounded1 = val1.setScale(0, RoundingMode.HALF_EVEN);
-        System.out.println("2.5 rounds to: " + rounded1); // Output: 2
+        // 2.55 is exactly halfway. Nearest first decimal place even number is 2.6.
+        BigDecimal val1 = new BigDecimal("2.55");
+        BigDecimal rounded1 = val1.setScale(1, RoundingMode.HALF_EVEN);
+        System.out.println("2.55 rounds to: " + rounded1); // Output: 2.6
 
-        // 3.5 is exactly halfway. Nearest even number is 4.
-        BigDecimal val2 = new BigDecimal("3.5");
-        BigDecimal rounded2 = val2.setScale(0, RoundingMode.HALF_EVEN);
-        System.out.println("3.5 rounds to: " + rounded2); // Output: 4
+        // 2.45 is exactly halfway. Nearest first decimal place even number is 2.4.
+        BigDecimal val2 = new BigDecimal("2.45");
+        BigDecimal rounded2 = val2.setScale(1, RoundingMode.HALF_EVEN);
+        System.out.println("2.45 rounds to: " + rounded2); // Output: 2.4
     }
 }
