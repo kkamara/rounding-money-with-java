@@ -1,6 +1,6 @@
 # rounding-money-with-java
 
-(14-Jun-2026) This repo demonstrates Bankers' Rounding (half-to-even) for monetary values in Java. The strategy is available out of the box via the Java API, making it well suited to financial calculations where rounding bias must be minimised.
+(14-Jun-2026) This repo demonstrates commercial rounding (round half up) for monetary values in Java. The strategy is available out of the box via the Java API, making it suitable for financial workflows, like in e-commerce, that require commercial rounding rules.
 
 * [Requirements](#requirements)
 
